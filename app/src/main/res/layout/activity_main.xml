@@ -10,8 +10,9 @@
         android:id="@+id/mDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         android:text="@string/mDate"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,17 +23,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="@string/mCity"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/imgIcon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mDate" />
+        app:layout_constraintTop_toBottomOf="@+id/mDate"
+        app:layout_constraintVertical_bias="0.228" />
 
     <ImageView
         android:id="@+id/imgIcon"
         android:layout_width="144dp"
         android:layout_height="124dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toTopOf="@+id/mTemp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -41,36 +44,61 @@
 
     <TextView
         android:id="@+id/mTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/mTemp"
-        app:layout_constraintBottom_toTopOf="@+id/mDescription"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/mFeelsLike"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="@string/degree"
-        app:layout_constraintBottom_toTopOf="@+id/mDescription"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/mTemp"
-        app:layout_constraintTop_toBottomOf="@+id/imgIcon"
-        app:layout_constraintVertical_bias="0.296" />
-
-    <TextView
         android:id="@+id/mDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
         android:text="@string/mDescription"
+        app:layout_constraintBottom_toTopOf="@+id/mTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIcon"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/mFeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="@string/mFeelsLike"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mDaylightHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daylightHours"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mFeelsLike"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="o"
+        app:layout_constraintBottom_toTopOf="@+id/mFeelsLike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mTemp"
+        app:layout_constraintTop_toBottomOf="@+id/mDescription"
+        app:layout_constraintVertical_bias="0.494" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

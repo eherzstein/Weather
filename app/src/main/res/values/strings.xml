@@ -5,4 +5,8 @@
     <string name="mTemp">30</string>
     <string name="degree">˚</string>
     <string name="mDescription">Description</string>
+    <string name="feels_like">Feels like</string>
+    <string name="mFeelsLike">Feels like</string>
+    <string name="mCountry">Country</string>
+    <string name="daylightHours">Daylight Hours</string>
 </resources>
